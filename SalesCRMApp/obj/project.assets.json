@@ -10923,9 +10923,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\New User\\source\\repos\\SalesCRMApp\\SalesCRMApp\\SalesCRMApp.csproj",
-      "projectName": "SalesCRMApp",
-      "projectPath": "C:\\Users\\New User\\source\\repos\\SalesCRMApp\\SalesCRMApp\\SalesCRMApp.csproj",
+      "projectUniqueName": "C:\\Users\\New User\\source\\repos\\SalesCRMApp\\SalesCRMApp\\Farmcentrals.csproj",
+      "projectName": "Farmcentrals",
+      "projectPath": "C:\\Users\\New User\\source\\repos\\SalesCRMApp\\SalesCRMApp\\Farmcentrals.csproj",
       "packagesPath": "C:\\Users\\New User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\New User\\source\\repos\\SalesCRMApp\\SalesCRMApp\\obj\\",
       "projectStyle": "PackageReference",

@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SalesCRMApp.Data;
 using SalesCRMApp.Models;
 
-namespace SalesCRMApp.Controllers
+namespace Farmcentrals.Controllers
 {
+    [Authorize]
+
     public class LeadsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -56,7 +59,7 @@ namespace SalesCRMApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,Mobile,Email,Source")] SalesLeadEntity salesLeadEntity)
+        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,Mobile,Email,Product")] Farmer salesLeadEntity)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +91,7 @@ namespace SalesCRMApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Mobile,Email,Source")] SalesLeadEntity salesLeadEntity)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Mobile,Email,Product")] Farmer salesLeadEntity)
         {
             if (id != salesLeadEntity.Id)
             {
